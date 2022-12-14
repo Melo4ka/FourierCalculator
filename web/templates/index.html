@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>MathHomework | Fourier Series</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div>
+        <figure class="logo"></figure>
+    </div>
+    <h2>Калькулятор</h2>
+</header>
+<div class="main">
+    <div class="fields">
+        <div class="input">
+            Функция:
+            <input type="text" id="function" placeholder="x^2"/>
+        </div>
+        <br>
+        <div class="input small">
+            Порядок разложения:
+            <input type="text" id="order" value="3" maxlength="2"/>
+        </div>
+        <br>
+        <div class="input small">
+            Интервал разложения: [<input type="text" id="start" value="0"/>,
+            <input type="text" id="end" value="3"/>]
+        </div>
+        <br>
+        <div class="form-buttons">
+            <button onclick="submit()">Отправить</button>
+        </div>
+    </div>
+    <div class="result" hidden>
+        <b>Ряд Фурье</b>
+        <br>
+        <div id="fourier-series"></div>
+        <br>
+        <b>График</b>
+        <div id="plot"></div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="social">
+        <a href="https://github.com/Melo4ka" target="_blank"><img src="../static/images/github.jpg"
+                                                                  alt="GitHub"></a>
+        <a href="https://vk.com/meldren" target="_blank"><img src="../static/images/vk.jpg" alt="Vk"></a>
+        <a href="https://telegram.me/meldren" target="_blank"><img src="../static/images/telegram.jpg"
+                                                                   alt="Telegram"></a>
+    </div>
+    <br>
+    © 2022 Andrienko Sergei. All rights reserved.
+</footer>
+<script src="../static/js/script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

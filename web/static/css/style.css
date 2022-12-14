@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500");
+
+body {
+    font: 15px/1.5 "Roboto Mono", Helvetica, sans-serif;
+    color: #ebebea;
+    background: #222222;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header {
+    padding: 15px;
+    font-size: 12px;
+    display: inline-flex;
+    flex: 1;
+}
+
+.logo {
+    background: url('../../static/images/logo.svg') no-repeat top left, top left;
+    background-size: auto, auto 100%;
+    width: 42px;
+    height: 50px;
+    padding: 0;
+    margin: 0 25px 0 0;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer img {
+    border-radius: 50%;
+    border-color: black;
+    width: 55px;
+    height: 55px;
+    margin: 0 7px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.footer img:hover {
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.75);
+}
+
+/* Main part */
+
+.main {
+    margin-top: 30px;
+    flex: auto;
+}
+
+.fields {
+    font-size: 20px;
+    margin: 0;
+}
+
+.fields .input {
+    text-align: left;
+}
+
+.fields .input input[type=text] {
+    width: 500px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+
+.fields .small input[type=text] {
+    width: 30px;
+    height: 30px;
+}
+
+.form-buttons button {
+    font-size: 15px;
+    margin: 25px 5px;
+    height: 40px;
+    width: 115px;
+    color: #ebebea;
+    background-color: #646363;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: all 1s;
+}
+
+.form-buttons button:hover {
+    background-color: #838282;
+}
+
+.result #fourier-series {
+    margin-top: 5px;
+    padding: 15px 8px 15px 17px;
+    line-height: 3;
+    border-left: 3px solid #eee;
+    border-radius: 10px;
+    background-color: rgba(189, 189, 189, 0.1);
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 750px;
+}
+
+.result #plot img {
+    margin-top: 5px;
+    box-shadow: 5px 20px 50px black;
+    height: 400px;
+    width: 500px;
+}
